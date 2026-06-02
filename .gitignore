@@ -1,5 +1,6 @@
-# Script local de processamento da foto (não faz parte do site)
+# Scripts locais de geração de assets (não fazem parte do site)
 process_photo.py
+make_og.py
 
 # Arquivos de sistema
 Thumbs.db
