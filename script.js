@@ -15,8 +15,8 @@ links.querySelectorAll('a').forEach(a =>
   a.addEventListener('click', () => links.classList.remove('open'))
 );
 
-// Animação de revelação ao rolar
-const revealEls = document.querySelectorAll('.section, .hero-inner');
+// Revelação ao rolar (uma vez por elemento)
+const revealEls = document.querySelectorAll('.sec, .hero-inner');
 revealEls.forEach(el => el.classList.add('reveal'));
 
 const io = new IntersectionObserver((entries) => {
@@ -26,6 +26,6 @@ const io = new IntersectionObserver((entries) => {
       io.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.1 });
 
 revealEls.forEach(el => io.observe(el));
