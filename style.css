@@ -89,6 +89,8 @@ a { color: inherit; text-decoration: none; }
 .grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .hero-role { font-size: clamp(1.1rem, 3vw, 1.5rem); color: var(--accent-2); font-weight: 600; font-family: 'Space Grotesk'; margin-bottom: 22px; }
 .hero-desc { font-size: 1.1rem; color: var(--muted); max-width: 560px; margin: 0 0 38px; }
+.hero-desc strong { color: var(--text); font-weight: 600; }
+.about-lead strong { background: var(--grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700; }
 .hero-actions { display: flex; gap: 14px; justify-content: flex-start; flex-wrap: wrap; margin-bottom: 56px; }
 
 .btn {
@@ -195,7 +197,17 @@ a { color: inherit; text-decoration: none; }
 .chip-2 { bottom: 14%; right: -22px; color: #c792ea; animation-delay: 1.6s; }
 
 /* Skills */
+.skills-sub {
+  font-family: 'Space Grotesk'; font-size: 1.05rem; font-weight: 600; color: var(--text);
+  display: flex; align-items: center; gap: 12px; margin: 0 0 20px;
+}
+.skills-sub::before { content: ''; width: 22px; height: 3px; border-radius: 3px; background: var(--grad); }
+.skills-sub-2 { margin-top: 44px; color: var(--muted); }
+.skills-sub-2::before { background: var(--border-solid); }
+
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.skills-primary { grid-template-columns: repeat(4, 1fr); }
+.skills-secondary { grid-template-columns: repeat(3, 1fr); }
 .skill-card {
   background: var(--card); border: 1px solid var(--border-solid); border-radius: var(--radius);
   padding: 28px; transition: transform .25s, border-color .25s, background .25s;
@@ -204,6 +216,11 @@ a { color: inherit; text-decoration: none; }
 .skill-icon { font-size: 2rem; margin-bottom: 14px; }
 .skill-card h3 { font-size: 1.25rem; margin-bottom: 8px; }
 .skill-card p { color: var(--muted); font-size: .95rem; }
+
+/* Skills secundárias: um pouco mais discretas */
+.skills-secondary .skill-card { padding: 22px; background: var(--bg-soft); opacity: .9; }
+.skills-secondary .skill-icon { font-size: 1.6rem; margin-bottom: 10px; }
+.skills-secondary .skill-card h3 { font-size: 1.1rem; }
 
 /* Projetos */
 .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
@@ -232,6 +249,8 @@ a { color: inherit; text-decoration: none; }
 
 /* Serviços */
 .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.services-primary { grid-template-columns: repeat(2, 1fr); }
+.services-secondary { grid-template-columns: repeat(2, 1fr); }
 .service-card {
   background: var(--card); border: 1px solid var(--border-solid); border-radius: var(--radius);
   padding: 26px; transition: transform .25s, border-color .25s;
@@ -239,6 +258,10 @@ a { color: inherit; text-decoration: none; }
 .service-card:hover { transform: translateY(-5px); border-color: var(--accent-2); }
 .service-card h3 { font-size: 1.15rem; margin-bottom: 10px; }
 .service-card p { color: var(--muted); font-size: .92rem; }
+/* Serviço em destaque (foco principal) */
+.service-highlight { border-color: rgba(124,92,255,0.35); background: linear-gradient(180deg, rgba(124,92,255,0.06), transparent); }
+.service-highlight h3 { font-size: 1.3rem; }
+.services-secondary .service-card { background: var(--bg-soft); opacity: .92; }
 
 /* Contato */
 .contact-inner { text-align: center; max-width: 640px; margin: 0 auto; }
