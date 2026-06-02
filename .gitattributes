@@ -1,0 +1,6 @@
+# Tratar binários como binários (evita corrupção por conversão de fim de linha)
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
