@@ -1,0 +1,7 @@
+# Script local de processamento da foto (não faz parte do site)
+process_photo.py
+
+# Arquivos de sistema
+Thumbs.db
+desktop.ini
+.DS_Store

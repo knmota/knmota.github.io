@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kauan Mota Pancelli — Desenvolvedor & Freelancer</title>
+  <meta name="description" content="Portfólio de Kauan Mota Pancelli, desenvolvedor e freelancer de Ribeirão Preto-SP. Python, JavaScript, C, automação com IA, copywriting e conteúdo para redes sociais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fundo animado -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-1" aria-hidden="true"></div>
+  <div class="bg-glow glow-2" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">KMP<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato" class="nav-cta">Contato</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">📍 Ribeirão Preto — SP</p>
+        <h1 class="hero-title">
+          Kauan Mota <span class="grad">Pancelli</span>
+        </h1>
+        <p class="hero-role">Desenvolvedor &amp; Freelancer</p>
+        <p class="hero-desc">
+          Crio soluções em software, automações inteligentes com IA e conteúdo
+          que converte. Da lógica ao texto, transformo ideias em produtos reais.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+          <a href="#contato" class="btn btn-ghost">Fale comigo</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>3+</strong><span>Projetos autorais</span></div>
+          <div class="stat"><strong>4</strong><span>Linguagens & stacks</span></div>
+          <div class="stat"><strong>2x</strong><span>Dev + Copywriter</span></div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <span class="bin-accent bin-top" aria-hidden="true">01001011 01001101 01010000</span>
+        <div class="photo-ring">
+          <div class="photo-frame">
+            <img src="kauan.png" alt="Foto de Kauan Mota Pancelli" />
+          </div>
+          <span class="code-chip chip-1" aria-hidden="true">&lt;dev/&gt;</span>
+          <span class="code-chip chip-2" aria-hidden="true">{ }</span>
+        </div>
+        <span class="photo-badge">● Disponível para projetos</span>
+        <span class="bin-accent bin-bottom" aria-hidden="true">while(true){ aprender(); }</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <span class="tag">Sobre</span>
+      <h2 class="section-title">Quem é o Kauan</h2>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="about-lead">
+            Sou desenvolvedor e freelancer apaixonado por construir coisas que
+            funcionam de verdade. Trabalho na fronteira entre código e
+            comunicação — programando aplicações, automatizando processos com
+            inteligência artificial e escrevendo textos que vendem.
+          </p>
+          <p class="about-text">
+            Atuo de ponta a ponta: desenho a solução, desenvolvo, e ainda cuido
+            da comunicação do produto. Essa combinação rara de habilidade técnica
+            e escrita estratégica me permite entregar projetos completos — do
+            back-end ao copy da landing page.
+          </p>
+        </div>
+
+        <div class="code-window" aria-hidden="true">
+          <div class="code-bar">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+            <span class="code-file">kauan.py</span>
+          </div>
+          <pre class="code-body"><code><span class="c-kw">class</span> <span class="c-cls">Desenvolvedor</span>:
+    <span class="c-kw">def</span> <span class="c-fn">__init__</span>(<span class="c-var">self</span>):
+        <span class="c-var">self</span>.nome   = <span class="c-str">"Kauan Mota Pancelli"</span>
+        <span class="c-var">self</span>.local  = <span class="c-str">"Ribeirão Preto, SP"</span>
+        <span class="c-var">self</span>.stack  = [<span class="c-str">"Python"</span>, <span class="c-str">"JavaScript"</span>, <span class="c-str">"C"</span>]
+        <span class="c-var">self</span>.foco   = <span class="c-str">"automação com IA"</span>
+        <span class="c-var">self</span>.extra  = <span class="c-str">"copywriting & conteúdo"</span>
+
+    <span class="c-kw">def</span> <span class="c-fn">entregar</span>(<span class="c-var">self</span>, ideia):
+        <span class="c-kw">return</span> <span class="c-fn">build</span>(ideia) <span class="c-op">+</span> <span class="c-fn">copy</span>(ideia)  <span class="c-cmt"># do código ao texto</span></code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <span class="tag">Habilidades</span>
+      <h2 class="section-title">Stack &amp; Competências</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+          <p>Automação, scripts, back-end e integração com IA.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Interfaces dinâmicas, web apps e experiências interativas.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon">🔧</div>
+          <h3>C</h3>
+          <p>Programação de baixo nível, performance e lógica de sistemas.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <h3>Automação com IA</h3>
+          <p>Fluxos inteligentes que economizam tempo e escalam resultados.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon">✍️</div>
+          <h3>Copywriting</h3>
+          <p>Textos persuasivos focados em conversão e clareza.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon">📱</div>
+          <h3>Conteúdo Social</h3>
+          <p>Criação de conteúdo estratégico para redes sociais.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <span class="tag">Projetos</span>
+      <h2 class="section-title">Trabalhos em destaque</h2>
+
+      <div class="projects">
+
+        <article class="project-card">
+          <div class="project-badge">Desktop · Performance</div>
+          <h3>Otimizador de Jogos</h3>
+          <p class="project-desc">
+            Aplicação completa para maximizar o desempenho de jogos, organizada
+            em 4 abas que cuidam de cada aspecto da máquina.
+          </p>
+          <ul class="project-feats">
+            <li>🧹 Limpeza de arquivos</li>
+            <li>💽 Desfragmentação</li>
+            <li>🛠️ Reparo de erros</li>
+            <li>🎮 Modo jogo</li>
+          </ul>
+          <div class="project-tags">
+            <span>C#</span><span>Otimização</span><span>Windows</span>
+          </div>
+        </article>
+
+        <article class="project-card project-featured">
+          <div class="project-badge">SaaS · Tempo real</div>
+          <h3>Localyzi</h3>
+          <p class="project-desc">
+            Sistema de rastreamento de dispositivos empresariais em tempo real,
+            com visualização em mapa interativo. Ideal para gestão de frotas e
+            ativos corporativos.
+          </p>
+          <ul class="project-feats">
+            <li>🗺️ Mapa em tempo real</li>
+            <li>🏢 Foco empresarial</li>
+            <li>📡 Rastreamento ao vivo</li>
+            <li>📊 Gestão de dispositivos</li>
+          </ul>
+          <div class="project-tags">
+            <span>Go</span><span>Geolocalização</span><span>Dashboard</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-badge">Ferramenta · E-commerce</div>
+          <h3>Calculadora de Precificação</h3>
+          <p class="project-desc">
+            Calculadora inteligente de preços para marketplaces, considerando
+            taxas e comissões de cada plataforma para garantir margem de lucro.
+          </p>
+          <ul class="project-feats">
+            <li>🛒 Shopee</li>
+            <li>📦 Mercado Livre</li>
+            <li>🅰️ Amazon</li>
+            <li>💰 Margem garantida</li>
+          </ul>
+          <div class="project-tags">
+            <span>JavaScript</span><span>Marketplaces</span><span>Finanças</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <span class="tag">Serviços</span>
+      <h2 class="section-title">Como posso ajudar</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>💻 Desenvolvimento</h3>
+          <p>Aplicações, ferramentas e sistemas sob medida em Python, JavaScript e C.</p>
+        </article>
+        <article class="service-card">
+          <h3>🤖 Automação com IA</h3>
+          <p>Automatizo tarefas repetitivas e crio fluxos inteligentes com IA.</p>
+        </article>
+        <article class="service-card">
+          <h3>✍️ Copywriting</h3>
+          <p>Textos de venda, páginas e anúncios pensados para converter.</p>
+        </article>
+        <article class="service-card">
+          <h3>📱 Conteúdo para Redes</h3>
+          <p>Criação e estratégia de conteúdo para impulsionar sua presença online.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="section contact" id="contato">
+    <div class="container contact-inner">
+      <span class="tag">Contato</span>
+      <h2 class="section-title">Vamos trabalhar juntos?</h2>
+      <p class="contact-lead">
+        Tem um projeto, uma ideia ou precisa de uma mão técnica e criativa?
+        Me chama — respondo rápido.
+      </p>
+      <div class="contact-actions">
+        <a href="mailto:kauan.mota06@outlook.com" class="btn btn-primary">✉️ kauan.mota06@outlook.com</a>
+        <a href="https://wa.me/5519999526107" target="_blank" rel="noopener" class="btn btn-ghost">💬 WhatsApp</a>
+        <a href="https://www.linkedin.com/in/kauan-mota-pancelli-00a125394/" target="_blank" rel="noopener" class="btn btn-ghost">in LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Kauan Mota Pancelli</span>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/kauan-mota-pancelli-00a125394/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://wa.me/5519999526107" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:kauan.mota06@outlook.com">E-mail</a>
+      </div>
+      <span>Ribeirão Preto — SP</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
